@@ -5,7 +5,7 @@ Inspiration
 We were disheartened to learn about the lack of information and resources accessible to the other countries regarding mensuration
 
 What it does
-This website is a safe space where women can freely talk about their mensuration, and not be afraid to share their opinion. They could turn to this place if they are stressed or just want to make their day. It is our mission to inform all the women and non-binary people that hygiene is not something that they shouldn't be ashamed of.
+This website is a safe space where women can freely talk about their mensuration, and not be afraid to share their opinion. They could turn to this place if they are stressed or just want to make their day. It is our mission to inform all the women and non-binary people that hygiene is not something that they should be ashamed of.
 
 How we built it
 We built the front end using HTML, CSS, and JavaScript/JQuery. The backend was made using Flask, Twilio, and News API. We made a game (MenoPositivity) to raise awareness and speak against negativity
