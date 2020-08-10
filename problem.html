@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ocean Purity Foundation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      
+<!-- The donation -->
+<div id="donation" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <div class="row">
+    <div class="col-md-6 mt-2 ">
+      <h1  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;margin-bottom:1rem;">DONATE</h1>
+      <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+    <form>
+      <div class="form-row">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="First name">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+       </div>
+       </div>
+    </form>
+     <form>
+      <div class="form-row mt-2">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="Email">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Phone Number">
+       </div>
+       </div>
+    </form>
+       <div class="form-group mt-2">
+        <label for="exampleFormControlSelect1"><b  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Select amount</b></label>
+         <select class="form-control" id="exampleFormControlSelect1">
+          <option>$10</option>
+          <option>$20</option>
+          <option>$50</option>
+          <option>$75</option>
+          <option>$100</option>
+        </select>
+       </div>
+       <div class="form-group">
+        <label for="exampleFormControlTextarea1"  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Message</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       </div>  
+       <button class="btn btn-rounded btn-primary"id="myBtn2">SUBMIT DONATION</button>
+    </div>
+     <div class="col-md-6 mt-2">
+       <h1 style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;"> WHY </h1>
+       <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+       <p style="font-family: 'Lato', sans-serif;font-size:1.2rem;text-shadow: 1px 1px 2px #000000;">“People need air to breathe, water to drink, food to eat, new medicines, a climate we can live in, beauty, inspiration and recreation. We need to know that we belong to something bigger than ourselves. We want a better future for those we care about. To survive and prosper, we need healthy oceans. The ocean is the largest ecosystem on Earth, it is the planet’s life support system. Oceans generate half of the oxygen we breathe and, at any given moment, they contain more than 97% of the world’s water. Oceans provide at least a sixth of the animal protein people eat. Living oceans absorb carbon dioxide from the atmosphere and reduce climate change impacts. The diversity and productivity of the world’s oceans is a vital interest for humankind. Our security, our economy, our very survival all require healthy oceans.”
+</p>
+  
+     </div>
+    </div>
+  </div>
+</div>
+
+
+  
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:white;" id="navbar">
+  <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/1754/1754456.svg"style=" height:3rem;width:3rem;">MONTHLIES</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul style="float:left;">
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#about" style="color:#003755;">Our Mission <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#team" style="color:#003755;">About Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Ways to Help
+        </a>
+        <div class="dropdown-menu pl-2" aria-labelledby="navbarDropdownMenuLink" 
+        style="background-color:#6bdddd;"><!-- this is the background color for the drop down nav bar--> 
+          <a class="dropdown-item"  onclick="openNav()" href="#">Donate</a>
+          <a class="dropdown-item" href="survey.html">Survey</a>
+          <a class="dropdown-item" href="news.html">Local Meetups</a>
+        </div>
+       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Game and News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="game.html">Game</a>
+          <a class="dropdown-item" href="news.html">News</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Latest News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="#news">Massachusetts Bill</a>
+          <a class="dropdown-item" href="#news">Pilot Products</a>
+          <a class="dropdown-item" href="#news">Products in College</a>
+        </div>
+      </li>
+      </ul>
+      </div>
+    </nav>
+     
+    <div class="home2 container-fuild">
+     <div class="row" id="ad">
+       <div class="col-lg-12 text-center pt-3">
+           <span class="donate1" onclick="openNav()"><h1>DONATE<img src="img/make-a-donation.svg"style="height:2rem;margin-bottom:0.7rem;"></h1></span>
+       </div>
+     </div>
+     <div class="row">
+        <div class="opening col-lg-12 pl-5">
+          <h1>THE LARGEST<br>PROBLEM IN OUR OCEAN</h1>
+        </div>
+     </div>
+    </div>
+
+    <div class="info2 container-fuild">
+     <div class="row">
+        <div class="col-md-6 pt-5 pl-5 pr-5 pb-5">
+           <hr style="height:0.1rem;background-color:#01cbe1;width:50%" align="left">
+          <h3 class="h3tag">OVER 5 TRILLION PIECES OF PLASTIC CURRENTLY LITTER THE OCEAN</h3>
+          <p class="ptag">
+            Trash accumulates in five ocean garbage patches, the largest one being the Great Pacific Garbage Patch, located between Hawaii and California. If left to circulate, the plastic will impact our ecosystems, health, and economies. Solving it requires a combination of closing the source, and cleaning up what has already accumulated in the ocean. 
+         </p>
+        </div>
+        <div class="col-md-6 text-center" style="padding-top:3rem;">
+          <img src="img/radioactive.svg" style=" height:20rem;width:25rem;padding-bottom:1rem;">
+        </div>
+       
+     </div>
+    </div>
+    
+    
+  <div class="effects container-fuild pb-5">
+    <div class="row">
+        <div class="col-md-6 pl-5 pt-5 pr-5 pb-5">
+          <h3 class="h3tag3">EFFECTS</h3>
+          <hr style="background-color:#024469;height:0.1rem;width:40%;margin-top:4rem;" align="left">
+          <p class="ptag2">
+            People around the world are unaware of the problems of certain items we use everyday. By not acting fast and not taking the right precautions and protections, we face creating irreversible damage and the end of many important food sources in the world. Plastic is everywhere: Soda Cans, Water Bottles, Straws, and Bags. For years now we have been told and aware that recycling is the best way of getting rid of waste in the best way possible and still 90% of global plastic is not being recycled. Oceans like the Antarctic ocean supports many sea creatures such as- Penguins, Whales, Fishes, and Seals.
+
+         </p>
+        </div>
+        <div class="col-md-6 text-center" style="padding-top:3rem;">
+          <img src="https://media.giphy.com/media/apSIOgMkOEuxG/giphy.gif" style=" height:20rem;width:25rem;">
+        </div>
+       
+     </div>
+    </div>
+    
+    <div class="pop container-fuild pb-5">
+      <div class="row text-center">
+         <div class="col-lg-12">
+        <h3 class="h3tag4 mt-5">EFFECTS ON ORGANISMS<h3>
+          <hr style="width:40%;height:0.1rem;background-color:#01cbe1;">
+         </div>
+      </div>
+      
+       <div class="row text-center mt-5">
+          <div class="col-md-4">
+             <h3 style="color:white;">Turtle <h3>
+            <img src="img/turtle-shape.svg" style="height:10rem;">
+            <hr style="background-color:white;height:0.1rem;width:40%;" align="center">
+            <h3 style="color:white;">Population before 1950s - 10m Population after 1950s - 1m<h3>
+            <p class="ptag text-left" style="margin-left:2rem;margin-right:2rem;">Seven different species of sea (or marine) turtle live in our ocean waters. Human activities have tipped the scales against the survival of sea turtles and nearly all species of sea turtles are classified as endangered. They face habitat destruction, accidental capture in fishing gear, and death from consuming plastic.
+</p>
+          </div>
+
+            <div class="col-md-4">
+             <h3 style="color:white;"> Dolphin <h3>
+            <img src="img/dolphin.svg" style="height:10rem;">
+            <hr style="background-color:white;height:0.1rem;width:40%;" align="center">
+            <h3 style="color:white;">Population before 1950s - 1m Population after 1950s - 600k
+<h3>
+            <p class="ptag text-left" style="margin-left:2rem;margin-right:2rem;">Dolphin threats are a result of human activities and their related impacts. In recent history the Baiji, also known as the Yangtze river dolphin, was declared critically endangered, its river habitat ruined by the construction of dams and the invasion of boat traffic.
+</p>
+          </div>
+
+            <div class="col-md-4">
+             <h3 style="color:white;">Manatee<h3>
+            <img src="img/manatee-mammal-animal-shape.svg" style="height:10rem;">
+            <hr style="background-color:white;height:0.1rem;width:40%;" align="center">
+            <h3 style="color:white;">Population before 1950s - 2m Population after 1950s - 13k
+<h3>
+            <p class="ptag text-left" style="margin-left:2rem;margin-right:2rem;">Thousands of years of evolution have prepared an Arctic species like the narwhal for life on and around the sea ice. Because of climate change, this ice cover has dramatically decreased in both extent and thickness, at a rate far too quick for a species to adapt. 
+</p>
+          </div>  
+       </div>
+    </div>
+  
+
+
+   
+  <div class="howtohelp container-fuild pb-4">
+    <div class="row">
+        <div class="col-md-12 text-center" id="help4">
+          <a href="fix.html"><button>CLICK TO HELP</button></a>
+        </div>
+    
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer style="background-color:#003755;padding-bottom:2rem;">
+  <div class="foot container">
+    <div class="row">
+      <div class="col-md-6">
+        <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+        <h3>FOLLOW US</h3>
+        <img src="img/twitter.svg" style="height:2rem;">
+        <img src="img/facebook.svg" style="height:2rem;">
+        <img src="img/vimeo.svg" style="height:2rem;">
+        <img src="img/google-plus.svg" style="height:2.8rem;">
+      </div>
+      <div class="col-md-6" style="margin-top:1.8rem;">
+        <h5>Join other informed donors and get updates on new features, news, and volunteering opportunities.</h5>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Your email address">
+          <div class="input-group-append">
+            <button type="submit" class="btn2 btn-primary" id="myBtn" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+            
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="color:#024469;font-size: 1.2rem; font-family: 'Lato', sans-serif;float:left;">Thank You For Joining Monthlies!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">You will now be added to our mailing list. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top:5rem;">
+      <div class="col-md-3">
+        <h4>CONTACT<h4>
+              <h5 class="mt-3">Monthlies<br>
+              Po Box 1456<br>
+              Washington, D.C.<br> United States<br></h5>
+              <h5>monthelies@gmail.com<br> 
+              (523) 234-2546</h5>
+        
+      </div>
+      <div class="col-md-3">
+        <h4>HELP<h4>
+            <a href="#">
+              <h5 class="mt-3">Donate</h5>
+            </a>
+            <a href="fix.html">
+              <h5 class="mt-3">Volunteer</h5>
+            </a>
+           
+      </div>
+      <div class="col-md-3">
+        <h4> AWARENESS <h4>
+            <a href="problem.html">
+              <h5 class="mt-3">Concerns</h5>
+            </a>
+            <a href="fix.html">
+              <h5 class="mt-3">Solutions</h5>
+            </a>
+            <a href="#news">
+              <h5 class="mt-3">News</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Subscribe</h5>
+            </a>
+            <a href="#info">
+              <h5 class="mt-3">Our Mission</h5>
+            </a>
+      </div>
+      <div class="col-md-3">
+        <h4>SPONSORS<h4>
+            <a href="">
+              <h5 class="mt-3">Kao</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Johnson&Johnson</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Proctor and Gamble</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Kimberly-Clark</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Bella</h5>
+            </a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+  <!-- donation popup content -->
+<div id="myModal2" class="modal2">
+
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+     <h3 class="h3tag3">THANK YOU, FOR YOUR DONATION</h3>
+    <hr style="margin-top:5rem;height:1rem;">
+       <h3 class="text-left">Your donation will be used to protects wild rivers, restore damaged rivers and the wildlife they support, and conserve clean water for people and nature.</h3>
+       <a href="index.html"><button type="submit" class="btn2 btn-primary" id="myBtn" style="font-size:1.5rem;">CONTINUE</button></a>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

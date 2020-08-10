@@ -1,0 +1,345 @@
+<!-- Phincho working on survey -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Monthlies</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
+    <link href="team.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="survey.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>     -->
+    
+
+  </head>
+  <body>
+    <div id="donation" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <div class="row">
+    <div class="col-md-6 mt-2 ">
+      <h1  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;margin-bottom:1rem;">DONATE</h1>
+      <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+    <form>
+      <div class="form-row">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="First Name">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Last Name">
+       </div>
+       </div>
+    </form>
+     <form>
+      <div class="form-row mt-2">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="Email">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Phone Number">
+       </div>
+       </div>
+    </form>
+       <div class="form-group mt-2">
+        <label for="exampleFormControlSelect1"><b  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Select amount</b></label>
+         <select class="form-control" id="exampleFormControlSelect1">
+          <option>$10</option>
+          <option>$20</option>
+          <option>$50</option>
+          <option>$75</option>
+          <option>$100</option>
+        </select>
+       </div>
+       <div class="form-group">
+        <label for="exampleFormControlTextarea1"  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Comments & Concerns</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       </div>  
+       <button class="btn btn-rounded btn-primary" id="myBtn2" >DONATE</button>
+    </div>
+     <div class="col-md-6 mt-2">
+       <h1 style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;"> WHY </h1>
+       <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+       <p style="font-family: 'Lato', sans-serif;font-size:1.2rem;text-shadow: 1px 1px 2px #000000;">“Your nonprofit donation will help such Monthlies to buy the clothes, food products, clean water for the families, and deliver the products. We also try to find different forms of employments for the people so they can support their own families. We want to improve the standards of living. Any form of the donatn will be galdly accepted.”
+</p>
+
+  
+  
+     </div>
+    </div>
+  </div>
+</div>
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:white;" id="navbar">
+  <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/1754/1754456.svg"style=" height:3rem;width:3rem;">MONTHLIES</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul style="float:left;">
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#about" style="color:#003755;">Our Mission <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#team" style="color:#003755;">About Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Ways to Help
+        </a>
+        <div class="dropdown-menu pl-2" aria-labelledby="navbarDropdownMenuLink" 
+        style="background-color:#6bdddd;"><!-- this is the background color for the drop down nav bar--> 
+          <a class="dropdown-item"  onclick="openNav()" href="#">Donate</a>
+          <a class="dropdown-item" href="survey.html">Survey</a>
+          <a class="dropdown-item" href="news.html">Local Meetups</a>
+        </div>
+       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Game and News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="game.html">Game</a>
+          <a class="dropdown-item" href="news.html">News</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Latest News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="#news">Massachusetts Bill</a>
+          <a class="dropdown-item" href="#news">Pilot Products</a>
+          <a class="dropdown-item" href="#news">Products in College</a>
+        </div>
+      </li>
+      </ul>
+      </div>
+    </nav>
+   
+
+</section>
+
+
+
+<center><h1>What menstrual product are you?</h1></center>
+
+<a id = "herelads"><div><header = "home"></header></div></a>
+
+ <div class="survey">
+  
+  <h2 class="survey-question" style="margin-top:100px">Q1: What is your spirit animal?</h2>
+  <ul data-quiz-question="2">
+    <div class="row">
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox1_1" type="radio" name = "quest1" id="myCheckbox1_1" value = "myCheckbox1_1"/>
+        <label for="myCheckbox1"><img src="https://static.scientificamerican.com/sciam/cache/file/5C51E427-1715-44E6-9B14D9487D7B7F2D_source.jpg?w=590&h=800&91ED69A6-2A32-43A3-97F8B241182A7D50" width="400px";height="400px";></center></label>
+    </a>
+      </div>
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox1_2" type="radio" name = "quest1" id="myCheckbox1_2"/>
+        <label for="myCheckbox1"><img src="https://i.ytimg.com/vi/-Y24YwBR5y0/maxresdefault.jpg"width="470px";height="600px";></center></label>
+     </a>
+    </div>
+    <div class="col-sm-6">
+      <center><input class = "myCheckbox1_3" type="radio" name = "quest1" id="myCheckbox1_3" />
+        <label for="myCheckbox1"><img src="https://vignette.wikia.nocookie.net/junglemperorleo/images/7/7a/Wolf-gray-wolf.jpg/revision/latest?cb=20191110005706"width="400px";height="600px";></center></label>
+     </a>
+    </div>
+    <div class="col-sm-6">
+      <center><input class = "myCheckbox1_4" type="radio" name = "quest1" id="myCheckbox1_4" />
+        <label for="myCheckbox1"><img src="https://kids.sandiegozoo.org/sites/default/files/2018-08/story-hero-zuli.jpg"width="470px";height="500px";></center></label>
+     </a>
+    </div>
+  </ul> 
+ </div>
+ <hr>
+ <!-- Third question -->
+ <div class="survey">
+  
+  <h2 class="survey-question" style="margin-top:100px">Q2: Which mensturational product represents you?</h2>
+  <ul data-quiz-question="2">
+    <div class="row">
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox2_1" type="radio" name = "quest2" id="myCheckbox2_1" />
+        <label for="myCheckbox1"><img src="https://5.imimg.com/data5/OQ/LK/MY-22961241/large-sanitary-pad-500x500.jpg" width="300px"height="200px"></center></label>
+    </a>
+      </div>
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox2_2" type="radio" name = "quest2"  id="myCheckbox2_2" />
+        <label for="myCheckbox1"><img src="https://thumbs.dreamstime.com/t/menstrual-tampon-close-up-white-background-menstrual-tampon-close-up-white-background-101423252.jpg"width="300px"height="200px"></center></label></a></div>
+      
+      <div class="col-sm-6">
+      <center><input  class = "myCheckbox2_3" type="radio" name = "quest2" id="myCheckbox2_3" />
+        <label for="myCheckbox1"><img src="https://obviweretheladiesdotcom.files.wordpress.com/2015/01/divacup-on-bag1.jpg?w=1024"width="300px"height="200px"></center></label>
+     </a>
+    </div>
+    <div class="col-sm-6">
+      <center><input class = "myCheckbox2_4" type="radio" name = "quest2"  id="myCheckbox2_4" />
+        <label for="myCheckbox1"><img src="https://my-test-11.slatic.net/p/c1d15d16fcb8a5bf1a6b688b6578ed33.jpg_720x720q80.jpg_.webp"width="300px"height="200px"style="padding-right:20px"></center>
+     </a></label>
+    </div>
+  </ul> 
+ </div>
+ <hr>
+ <!-- 4th Question -->
+<div class="survey">
+  
+  <h2 class="survey-question" style="margin-top:100px">Q3: What do you enjoy during your free time?</h2>
+  <ul data-quiz-question="2">
+    <div class="row">
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox3_1" type="radio" name = "quest4"  id="myCheckbox3_1" />
+        <label for="myCheckbox1"><img src="https://i.guim.co.uk/img/media/f8ab0f1910de3e56eb015975613a668128fe1b7b/0_0_2047_1365/master/2047.jpg?width=300&quality=85&auto=format&fit=max&s=380cb5ec6a10fd32795ae90d0b6c4482" width="375px"height="200px"></center></
+    </a>
+      </div>
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox3_2" type="radio" name = "quest4" id="myCheckbox3_2" />
+        <label for="myCheckbox1"><a href="#"style="display:block"target="_blank"><img src="https://medatrio.com/wp-content/uploads/2018/05/01-walking-for-exercise-stroll-with-friends.jpg"width="375px"height="200px"></center></a></label></div>
+      
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox3_3" type="radio" name = "quest4" id="myCheckbox3_3" />
+        <label for="myCheckbox1"><img src="https://www.abc.net.au/news/image/8534540-3x2-940x627.jpg"width="375px"height="200px"></center>
+     </a>
+    </div>
+    <div class="col-sm-6">
+      <center><input class = "myCheckbox3_4" type="radio" name = "quest4" id="myCheckbox3_4" />
+        <label for="myCheckbox1"><img src="https://techcrunch.com/wp-content/uploads/2018/08/GettyImages-944229620.jpg?w=730&crop=1"width="375px"height="200px"style="padding-right:20px"></center>
+     </a></label>
+    </div>
+  </ul> 
+ </div>
+ <hr>
+ <!-- 5th question -->
+ <div class="survey">
+  
+  <h2 class="survey-question" style="margin-top:100px">Q4: Where is your dream vacation?</h2>
+  <ul data-quiz-question="5">
+    <div class="row">
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox4_1" type="radio" name = "quest5" id="myCheckbox4_1" />
+        <label for="myCheckbox1"><img src="https://specials-images.forbesimg.com/imageserve/675172642/960x0.jpg?fit=scale" width="370px"height="200px"></center>
+    </a></label>
+      </div>
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox4_2" type="radio" name = "quest5" id="myCheckbox4_2" />
+        <label for="myCheckbox1">
+          <img src="https://content.api.news/v3/images/bin/2788fba023921799476ae49e8f1b30c3?width=1280"width="370px"height="200px">
+        </label>
+      </center>
+      </div>
+
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox4_3" type="radio" name = "quest5" id="myCheckbox4_3" />
+        <label for="myCheckbox1"><img src="https://lp-cms-production.imgix.net/2019-06/512d769cd0d5e56c238eb975d2325940-japan.jpeg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4"width="370px"height="200px"></center>
+     </a></label>
+    </div>
+    <div class="col-sm-6">
+      <center><input  type="radio" class = "myCheckbox4_4" name = "quest5" id="myCheckbox4_4" />
+        <label for="myCheckbox1"><img src="https://www.andbeyond.com/wp-content/uploads/sites/5/nepal-village.jpg"width="370px"height="200px"></center>
+     </a></label>
+    </div>
+    <hr>
+<!-- 7th question -->
+<div class="survey">
+  
+  <h2 class="survey-question" style="margin-top:100px">Q5: What is a courageous activities you want to do?</h2>
+  <ul data-quiz-question="5">
+    <div class="row">
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox5_1" type="radio" name = "quest6" id="myCheckbox5_1" />
+        <label for="myCheckbox1"><img src="https://blog.playo.co/wp-content/uploads/2017/01/a-girl-bungee-jumping.jpg" width="370px"height="200px"></center>
+    </a></label>
+      </div>
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox5_2" type="radio" name = "quest6"  id="myCheckbox5_2" />
+        <label for="myCheckbox1">
+          <img src="https://snowbrains.com/wp-content/uploads/2019/08/iu-5-min.jpeg"width="370px"height="200px">
+        </label>
+      </center>
+      </div>
+      
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox5_3" type="radio"  name = "quest6" id="myCheckbox5_3" />
+        <label for="myCheckbox1"><img src="https://blog.padi.com/wp-content/uploads/2018/07/Padi-GrandCayman-03-2018-underwater-2734.jpg"width="370px"height="200px"></center>
+     </a></label>
+    </div>
+    <div class="col-sm-6">
+      <center><input class = "myCheckbox5_4" type="radio" name = "quest6"  id="myCheckbox5_4" />
+        <label for="myCheckbox1"><img src="https://lh3.googleusercontent.com/proxy/MX0QfCY84IU14WHAiDYeS9q17RXUv1NQttTl-mU2cXCkaxGXHAESAz7EcXn_3vtXH8d3CcyjPeS_wBJ3u8xKA72Kc7uzQX96cboVsyYNo2ce9pm_tMQqcj6sQW7gsu7ZLjcMRgeHTL2bqjf2obF0Ho5BUmfSR9aL-SJqs3EVM0kyO1rbslY=s0-d"width="370px"height="200px"></center>
+     </a></label>
+    </div>
+    <hr>
+ <!--end of 7th question  -->
+<!-- 5th question -->
+<div class="survey">
+  
+  <h2 class="survey-question" style="margin-top:100px">Q6: What exercises do you do?</h2>
+  <ul data-quiz-question="5">
+    <div class="row">
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox6_1" type="radio" name = "quest7" id="myCheckbox6_1" />
+        <label for="myCheckbox1"><img src="https://img.grouponcdn.com/seocms/2AyJNdUZErWUT38rryLdNQBBrLUJ/ihs_0-116_15000_1__jpg_crop_jpeg-1080x648" width="370px"height="200px"></center>
+    </a></label>
+      </div>
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox6_2" type="radio" name = "quest7" id="myCheckbox6_2" />
+        <label for="myCheckbox1">
+          <img src="https://www.healthline.com/hlcmsresource/images/topic_centers/4673-woman_barbell_lifting_weight_training-1200x628-Facebook.jpg"width="370px"height="200px">
+        </label>
+      </center>
+      </div>
+      
+      <div class="col-sm-6">
+      <center><input class = "myCheckbox6_3" type="radio" name = "quest7" id="myCheckbox6_3" />
+        <label for="myCheckbox1"><img src="https://www.heraldnet.com/wp-content/uploads/2019/09/18675372_web1_TSR-181110-EDH-StateSwimming.jpg"width="370px"height="200px"></center>
+     </a></label>
+    </div>
+    <div class="col-sm-6">
+      <center><input class = "myCheckbox6_4" type="radio" name = "quest7"  id="myCheckbox6_4" />
+        <label for="myCheckbox1"><img src="https://media1.popsugar-assets.com/files/thumbor/duXj5jED21lw9A4VsM_bqwoaaZU/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/08/05/066/n/1922729/tmp_W8D5mS_06e8f3724b6c718f_GettyImages-600646422.jpg"width="370px"height="200px"></center>
+     </a></label>
+    </div>
+    <hr>
+<!-- end of 5th question -->
+
+  <div class="mt-1">
+     <button onclick = "check()" type="button" style="background-color:#c70c16; border-radius: 10px" class="btn btn-primary hover-green submition" data-toggle="modal" data-target="#exampleModal"><h4 style="margin-top:10px;">Submit</h4></button>
+  </div>
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Thank you for taking the survey. We will reach back to you soon.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<script src="survey.js"></script>
+
+ </body>
+ </html>

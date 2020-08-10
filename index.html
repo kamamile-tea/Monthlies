@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Monthlies</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- The donation -->
+<div id="donation" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <div class="row">
+    <div class="col-md-6 mt-2 ">
+      <h1  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;margin-bottom:1rem;">DONATE</h1>
+      <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+    <form>
+      <div class="form-row">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="First Name">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Last Name">
+       </div>
+       </div>
+    </form>
+     <form>
+      <div class="form-row mt-2">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="Email">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Phone Number">
+       </div>
+       </div>
+    </form>
+       <div class="form-group mt-2">
+        <label for="exampleFormControlSelect1"><b  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Select amount</b></label>
+         <select class="form-control" id="exampleFormControlSelect1">
+          <option>$10</option>
+          <option>$20</option>
+          <option>$50</option>
+          <option>$75</option>
+          <option>$100</option>
+        </select>
+       </div>
+       <div class="form-group">
+        <label for="exampleFormControlTextarea1"  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Comments & Concerns</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       </div>  
+       <button class="btn btn-rounded btn-primary" id="myBtn2" >DONATE</button>
+    </div>
+     <div class="col-md-6 mt-2">
+       <h1 style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;"> WHY </h1>
+       <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+       <p style="font-family: 'Lato', sans-serif;font-size:1.2rem;text-shadow: 1px 1px 2px #000000;">“Your nonprofit donation will help such Monthlies to buy the clothes, food products, clean water for the families, and deliver the products. We also try to find different forms of employments for the people so they can support their own families. We want to improve the standards of living. Any form of the donatn will be galdly accepted.”
+</p>
+
+  
+  
+     </div>
+    </div>
+  </div>
+</div>
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:white;" id="navbar">
+  <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/1754/1754456.svg"style=" height:3rem;width:3rem;">MONTHLIES</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul style="float:left;">
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#about" style="color:#003755;">Our Mission <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#team" style="color:#003755;">About Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Ways to Help
+        </a>
+        <div class="dropdown-menu pl-2" aria-labelledby="navbarDropdownMenuLink" 
+        style="background-color:#6bdddd;"><!-- this is the background color for the drop down nav bar--> 
+          <a class="dropdown-item"  onclick="openNav()" href="#">Donate</a>
+          <a class="dropdown-item" href="survey.html">Survey</a>
+          <a class="dropdown-item" href="news.html">Local Meetups</a>
+        </div>
+       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Game and News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="game.html">Game</a>
+          <a class="dropdown-item" href="news.html">News</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Latest News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="#news">Massachusetts Bill</a>
+          <a class="dropdown-item" href="#news">Pilot Products</a>
+          <a class="dropdown-item" href="#news">Products in College</a>
+        </div>
+      </li>
+      </ul>
+      </div>
+    </nav>
+     
+
+    <div class="home container-fuild">
+     <div class="row" id="ad">
+       <div class="col-lg-12 text-center pt-3">
+           <span class="donate1" onclick="openNav()"><h1>DONATE<img src="img/make-a-donation.svg"style="height:2rem;margin-bottom:0.7rem;"></h1></span>
+       </div>
+     </div>
+     <div class="row">
+        <div class="opening col-lg-12 pl-5">
+          <h1>CREATING<br>A SAFE SPACE</h1>
+        </div>
+     </div>
+    </div>
+ 
+    
+    <div class="info container-fuild" id="about">
+     <div class="row" style="right:0">
+        <div class="col-md-6 pt-5 pl-5 pr-5">
+           <hr style="height:0.1rem;background-color:#f9a7a7;width:50%" align="left">
+          <h3 class="h3tag">OUR MISSION</h3>
+          <p class="ptag">
+Menstrual hygiene supplies are a basic necessity that many low-income women lack. Our mission is to advocate for and provide improved access to menstrual hygiene supplies for low-income females across the world. Adequate menstrual hygiene involves access to clean sanitary materials that can be changed in private as often as necessary, access to soap and water for washing, and access to a place for the hygienic disposal of used sanitary materials or washing.Increasing evidence shows that interventions that address menstruation improve knowledge and practices around menstrual hygiene as well as outcomes such as school attendance in developing countries. We are a nonprofit organization, committed to supplying menstrual health products to people that menstruate who are either homeless or low-income.
+
+</p>
+        
+        </div>
+        <div class=" col-md-6 text-center" style="padding-top:8rem;">
+          <img src="https://image.flaticon.com/icons/svg/1754/1754521.svg" style=" height:20rem;width:25rem;padding-bottom:1rem;">
+       </div>
+     </div>
+    </div>
+
+
+ <section class="problem container-fuild">
+  <div class="row text-center">
+    <div class="left col-md-6">
+      <h1 style="margin-top:10rem;text-shadow: rgba(0,0,0,.5) 0 1px 1px;"> Concerns</h1>
+      <p style="text-align:justify;margin-left:1rem;margin-right:1rem;"> There are countries in which a woman’s monthly cycle doesn’t just stain sheets, it soils someone’s potential. In much of the developing world, a combination of cost and culture around female hygiene cripples the confidence and opportunity of women young and old.  A combination of myths, misconceptions, and cultural taboo swirl around the topic. </p>
+     <a href="https://www.tennessean.com/story/news/education/2018/08/14/lack-feminine-hygiene-products-keeps-girls-out-school/948313002/"><button type="button" class="btn btn-secondary">What's the problem?</button></a>
+    </div>
+
+     <div class="right col-md-6">
+       <h1 style="margin-top:10rem;text-shadow: rgba(0,0,0,.5) 0 1px 1px;"> Solutions</h1>
+       <p style="text-align:justify;margin-left:1rem;margin-right:1rem;">Educate the mass! Creating a open space that all women can come together and have a discussion is the next step in finding a solution to the main issue. Raising awareness to support all the woman and non binary people. Utilizing this platform, women have a overall better connection among themselves and to the issue itself.</p>
+      <a href="https://www.eventbrite.com/e/achieving-menstrual-equity-and-keeping-girls-in-school-raising-awareness-and-improving-access-to-tickets-77860628235"> <button class="btn btn-rounded btn-primary">Join The Solution</button></a>
+     </div>
+    </div>
+  </section>
+
+<section class="help pt-5 container-fuild pb-5"  id="news">
+  <div class="row">
+    <div class="col-md-12 text-center mb-2">
+      <hr style="width:40%;height:0.1rem;background-color:#01cbe1;">
+      <h1 class="h1tag2">THE LATEST <b>NEWS</b></h1>
+    </div>
+  </div>
+  <div class="row text-center" style="margin-left:18rem;margin-right:4rem;">
+    <div class="newsbackground1 col-md-3 text-left mr-2">
+          <h2 style="margin-top:1rem;">NEWS<h2>
+          <h4 class="h3tag2 mt-5">Bill Requires Massachusetts school to provide <br>free menstrual products</br></h4>
+          <hr style="background-color:white;height:0.1rem;">
+          <a class="newslink" href="https://boston.cbslocal.com/2020/02/15/bill-require-massachusetts-schools-free-menstrual-products-statehouse/">GO <img src="https://image.flaticon.com/icons/svg/149/149049.svg" style="height:2rem;margin-bottom:0.4rem;"></a>
+        </div>
+         
+         <div class="newsbackground2 col-md-3 text-left mr-2">
+          <h2 style="margin-top:1rem;">NEWS<h2>
+          <h4 class="h3tag2 mt-5">Wings launches free menstrual products pilot</h4>
+          <hr style="background-color:white;height:0.1rem;">
+          <a class="newslink" href="https://www.jhunewsletter.com/article/2020/02/wings-launches-free-menstrual-products-pilot">GO <img src="https://image.flaticon.com/icons/svg/149/149049.svg" style="height:2rem;margin-bottom:0.4rem;"></a>
+        </div>
+         
+         <div class="newsbackground3 col-md-3 text-left mr-2">
+          <h2 style="margin-top:1rem;">NEWS<h2>
+          <h4 class="h3tag2 mt-5">Menstrual products coming to college<br>(#womeninpower)</br></h4>
+          <hr style="background-color:white;height:0.1rem;">
+          <a class="newslink" href="https://www.purdueexponent.org/campus/article_bccece00-9d0c-5f87-b4c4-3cc7a1968184.html">GO <img src="https://image.flaticon.com/icons/svg/149/149049.svg" style="height:2rem;margin-bottom:0.4rem;"></a>
+        </div>
+         <div class="col-md-3">
+        </div>    
+      </div>
+    </section>
+
+    <section class="team container-fuild text-center" style="height:40vh;" id="team">
+       <div class="row">
+         <div class="col-lg-12">
+           <h1>OUR TEAM</h1>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-lg-12">
+           <h3 style="color:white; font-family: 'Lato', sans-serif;">AND SPONSORS 
+           </h3>
+         </div>
+       </div>
+    </section>
+
+    <section class="team2 container-fuild text-center mt-5 mb-5 ml-5 mr-5">
+       <div class="row">
+         <div class="col-md-4 pt-2">
+             <h3 style="color:#003755;">Phincho Sherpa</h3>
+            <img src="/team-img/phincho.jpg" style="height:15rem;border-radius:10px;width:15rem;">
+            <h3 style="color:#003755;">Game Developer<h3>
+           <p  class="" style="color:#003755;font-size:1.2rem;"></p>
+           <img src="img/linkedin.svg" style="height:2rem;">
+           <img src="img/facebook1.svg" style="height:2rem;">
+        
+          </div>
+
+
+
+          <div class="col-md-4 pt-2">
+             <h3 style="color:#003755;">Kamille Tipan</h3>
+            <img src="/team-img/kamille.jpeg" style="height:15rem;border-radius:10px;width:15rem;">
+            <h3 style="color:#003755;"> Frontend/ Backend Developer<h3>
+            <p  class="" style="color:#003755;font-size:1.2rem;"<p></p>
+            <img src="img/linkedin.svg" style="height:2rem;">
+           <img src="img/facebook1.svg" style="height:2rem;">
+          </div>
+
+
+          <div class="col-md-4 pt-2">
+             <h3 style="color:#003755;">Rofeeah Ayeni <h3>
+            <img src="/team-img/rofeeah.jpg" style="height:15rem;border-radius:10px;width:15rem;">
+            <h3 style="color:#003755;">Front End Developer<h3>
+            <p class="" style="color:#003755;font-size:1.2rem;"></p>
+             <img src="img/linkedin.svg" style="height:2rem;">
+           <img src="img/facebook1.svg" style="height:2rem;">
+          </div>
+
+
+          <!-- <div class="col-md-3 pt-2">
+             <h3 style="color:#003755;">Rofeeah Ayeni</h3>
+            <img src="/team-img/rofeeah.jpg" style="height:15rem;border-radius:10px;width:15rem;">
+            <h3 style="color:#003755;">Front-end Developer</h3>
+            <p  class="" style="color:#003755;font-size:1.2rem;"></p>
+             <img src="img/linkedin.svg" style="height:2rem;">
+           <img src="img/facebook1.svg" style="height:2rem;">
+          </div> -->
+
+         
+       </div>
+    </section>
+   
+   <section class="Sponsor container mb-5" style=" font-family: 'Lato', sans-serif;">
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner pl-5 pr-5">
+    <div class="carousel-item active text-center">
+         <h1>Procter and Gamble</h1>
+         <p>The global leader in feminine care, Procter and Gamble (P&G) is committed to bringing female hygiene to the social forefront. From launching discreet products for sensitive bladders, to partnering UNESCO to help girls impacted by the Syrian crisis, the company is working towards reaching out to females of all age groups and meet their specific needs.</p>
+    </div>
+    <div class="carousel-item text-center">
+          <h1>Johnson&Johnson</h1>
+         <p>One of the largest and most diverse healthcare companies in the world, Johnson & Johnson has R&D facilities in the US, Belgium, Brazil, Canada, China, France, Germany, and India.Last year, the company’s feminine care division launched the portal ‘Only,’ which provides daily updates on women’s health, beauty, and feminine intimacy.</p>
+    </div>
+    <div class="carousel-item text-center">
+       <h1>Kimberly-Clark</h1>
+         <p>One of the most recognizable brands in the world, Kimberly-Clark produces mostly paper-based products. The company also develops a wide range of items made of natural and synthetic fibers that are manufactured using novel technologies applicable to fibers, nonwovens, and permeable fabrics.</p>
+    </div>
+     <div class="carousel-item text-center">
+       <h1>Bella</h1>
+         <p>Another leading name in the global feminine care products market is Bella. Well-known for its low-cost products, the company has managed to reach out to women from all sections of the society, in a multitude of international markets.</p>
+    </div>
+     <div class="carousel-item text-center">
+       <h1>Kao</h1>
+         <p>Kao is a well-known name in beauty care, human health care, as well as fabric and home care. High sales volume in China has contributed to the success of this brand in the Asian market. The company’s line of feminine health products fall under the category of human health care.</p>
+    </div>
+  </div>
+  <a class="carousel-control-prev mt-5" href="#carouselExampleControls" role="button" data-slide="prev">
+    <img src="img/back.svg"
+    class="carousel-control-prev-icon" aria-hidden="true" style="height:10rem;width:3rem;">
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next mt-5" href="#carouselExampleControls" role="button" data-slide="next">
+    <img src="img/next.svg"
+     class="carousel-control-next-icon" aria-hidden="true" style="height:10rem;width:3rem;">
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   </section>
+<footer style="background-color:#003755;padding-bottom:2rem;">
+  <div class="foot container">
+    <div class="row">
+      <div class="col-md-6">
+        <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+        <h3>FOLLOW US</h3>
+        <img src="img/twitter.svg" style="height:2rem;">
+        <img src="img/facebook.svg" style="height:2rem;">
+        <img src="img/vimeo.svg" style="height:2rem;">
+        <img src="img/google-plus.svg" style="height:2.8rem;">
+      </div>
+      <div class="col-md-6" style="margin-top:1.8rem;">
+        <h5>Join other informed donors and get updates on new features, news, and volunteering opportunities.</h5>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Your email address">
+          <div class="input-group-append">
+            <button type="submit" class="btn2 btn-primary" id="myBtn" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+            
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="color:#024469;font-size: 1.2rem; font-family: 'Lato', sans-serif;float:left;">Thank You For Joining Monthlies!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">You will now be added to our mailing list. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top:5rem;">
+      <div class="col-md-3">
+        <h4>CONTACT<h4>
+              <h5 class="mt-3">Monthlies<br>
+              Po Box 1456<br>
+              Washington, D.C.<br> United States<br></h5>
+              <h5>monthelies@gmail.com<br> 
+              (523) 234-2546</h5>
+        
+      </div>
+      <div class="col-md-3">
+        <h4>HELP<h4>
+            <a href="#">
+              <h5 class="mt-3">Donate</h5>
+            </a>
+            <a href="fix.html">
+              <h5 class="mt-3">Volunteer</h5>
+            </a>
+           
+      </div>
+      <div class="col-md-3">
+        <h4> AWARENESS <h4>
+            <a href="problem.html">
+              <h5 class="mt-3">Concerns</h5>
+            </a>
+            <a href="fix.html">
+              <h5 class="mt-3">Solutions</h5>
+            </a>
+            <a href="#news">
+              <h5 class="mt-3">News</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Subscribe</h5>
+            </a>
+            <a href="#info">
+              <h5 class="mt-3">Our Mission</h5>
+            </a>
+      </div>
+      <div class="col-md-3">
+        <h4>SPONSORS<h4>
+            <a href="">
+              <h5 class="mt-3">Kao</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Johnson&Johnson</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Proctor and Gamble</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Kimberly-Clark</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Bella</h5>
+            </a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- donation popup content -->
+<div id="myModal2" class="modal2">
+
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+     <h3 class="h3tag3">THANK YOU, <span style="color:#01cbe1">JOHN</span> FOR YOUR DONATION</h3>
+     <hr style="margin-top:5rem;height:1rem;">
+       <h3 class="text-left">Your donation will be used to protects wild rivers, restore damaged rivers and the wildlife they support, and conserve clean water for people and nature.</h3>
+       <a href="index.html"><button type="submit" class="btn2 btn-primary" id="myBtn" style="font-size:1.5rem;">CONTINUE</button></a>
+  </div>
+
+</div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ocean Purity Foundation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      
+<!-- The donation -->
+<div id="donation" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <div class="row">
+    <div class="col-md-6 mt-2 ">
+      <h1  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;margin-bottom:1rem;">DONATE</h1>
+      <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+    <form>
+      <div class="form-row">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="First name">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+       </div>
+       </div>
+    </form>
+     <form>
+      <div class="form-row mt-2">
+       <div class="col">
+        <input type="text" class="form-control" placeholder="Email">
+       </div>
+       <div class="col">
+      <input type="text" class="form-control" placeholder="Phone Number">
+       </div>
+       </div>
+    </form>
+       <div class="form-group mt-2">
+        <label for="exampleFormControlSelect1"><b  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Select amount</b></label>
+         <select class="form-control" id="exampleFormControlSelect1">
+          <option>$10</option>
+          <option>$20</option>
+          <option>$50</option>
+          <option>$75</option>
+          <option>$100</option>
+        </select>
+       </div>
+       <div class="form-group">
+        <label for="exampleFormControlTextarea1"  style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;">Message</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       </div>  
+       <button class="btn btn-rounded btn-primary"id="myBtn2">SUBMIT DONATION</button>
+    </div>
+     <div class="col-md-6 mt-2">
+       <h1 style="font-family: 'Lato', sans-serif;text-shadow: 1px 1px 2px #000000;"> WHY </h1>
+       <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+      <p style="font-family: 'Lato', sans-serif;font-size:1.2rem;text-shadow: 1px 1px 2px #000000;">“People need air to breathe, water to drink, food to eat, new medicines, a climate we can live in, beauty, inspiration and recreation. We need to know that we belong to something bigger than ourselves. We want a better future for those we care about. To survive and prosper, we need healthy oceans. The ocean is the largest ecosystem on Earth, it is the planet’s life support system. Oceans generate half of the oxygen we breathe and, at any given moment, they contain more than 97% of the world’s water. Oceans provide at least a sixth of the animal protein people eat. Living oceans absorb carbon dioxide from the atmosphere and reduce climate change impacts. The diversity and productivity of the world’s oceans is a vital interest for humankind. Our security, our economy, our very survival all require healthy oceans.”
+</p>
+  
+     </div>
+    </div>
+  </div>
+</div>
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:white;" id="navbar">
+  <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/1754/1754456.svg"style=" height:3rem;width:3rem;">MONTHLIES</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul style="float:left;">
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#about" style="color:#003755;">Our Mission <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="btn1 dropdown">
+        <a class="nav-link" href="#team" style="color:#003755;">About Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Ways to Help
+        </a>
+        <div class="dropdown-menu pl-2" aria-labelledby="navbarDropdownMenuLink" 
+        style="background-color:#6bdddd;"><!-- this is the background color for the drop down nav bar--> 
+          <a class="dropdown-item"  onclick="openNav()" href="#">Donate</a>
+          <a class="dropdown-item" href="survey.html">Survey</a>
+          <a class="dropdown-item" href="news.html">Local Meetups</a>
+        </div>
+       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Game and News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="game.html">Game</a>
+          <a class="dropdown-item" href="news.html">News</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#003755;">
+         Latest News
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="background-color:#6bdddd;">
+          <a class="dropdown-item" href="#news">Massachusetts Bill</a>
+          <a class="dropdown-item" href="#news">Pilot Products</a>
+          <a class="dropdown-item" href="#news">Products in College</a>
+        </div>
+      </li>
+      </ul>
+      </div>
+    </nav>
+     
+    <div class="home3 container-fuild">
+     <div class="row" id="ad">
+       <div class="col-lg-12 text-center pt-3">
+           <span class="donate1" onclick="openNav()"><h1>DONATE<img src="img/make-a-donation.svg"style="height:2rem;margin-bottom:0.7rem;"></h1></span>
+       </div>
+     </div>
+     <div class="row">
+        <div class="opening col-lg-12 pl-5">
+         
+        </div>
+     </div>
+    </div>
+
+    <div class="info2 container-fuild" id="awareness">
+     <div class="row">
+        <div class="col-md-6 pt-5 pl-5 pr-5 pb-5">
+           <hr style="height:0.1rem;background-color:#01cbe1;width:50%" align="left">
+          <h3 class="h3tag">#1 WAY TO HELP</h3>
+          <p class="ptag">
+          Reduce Carbon Footprint! Carbon dioxide, a known greenhouse gas, is making our oceans more acidic. This is contributing to the loss of corals on a global scale, as their calcium skeletons are weakened by the increasing acidity of the water.
+
+         </p>
+        </div>
+        <div class="col-md-6 text-center" style="padding-top:3rem;">
+          <img src="https://image.flaticon.com/icons/svg/1484/1484008.svg" style=" height:20rem;width:25rem;padding-bottom:2rem;">
+        </div>
+       
+     </div>
+    </div>
+    
+    
+  <div class="effects container-fuild pb-5">
+    <div class="row">
+        <div class="col-lg-12 pl-5 pt-5 pr-5 pb-5">
+          <h3 class="h3tag3">WHAT YOU CAN DO RIGHT NOW</h3>
+          <hr style="background-color:#024469;height:0.1rem;width:60%;margin-top:4rem;" align="left">
+          <p class="ptag2">
+           <b>1</b> Ride a bike or use public transportation rather than driving a car (helps you save money on gas and buying a car)</p>
+           <p class="ptag2">
+           <b>2</b> Vote on ocean issues: Electing public officials that support good ocean policies can help us protect marine life and our oceans. Do your research on candidates and make an informed decision, then exercise your right (and responsibility) to vote. And don’t let Election Day be the last time they hear from you. Follow up with your candidates and elected officials regularly to remind them of policies you care about.</p>
+           <p class="ptag2">
+           <b>3</b> LEAVE NOTHING BEHIND! As beach crowds increase, so does the amount of trash left behind or blown away.
+         </p>
+        </div>
+       
+     </div>
+    </div>
+      
+   
+    <section class="team container-fuild text-center  pb-5" id="team">
+       <div class="row">
+         <div class="col-lg-12">
+           <h1>COMMUNITY MEETUPS</h1>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-lg-12">
+           <h3 style="color:white; font-family: 'Lato', sans-serif;">NEAR YOU
+           </h3>
+        </div>
+       </div>
+           <div class="row mt-2" style="padding-left:20rem;padding-right:20rem;">
+             <div class="form-group col-md-6 ">
+               <select id="inputState" class="form-control">
+               <option selected>State</option>
+               <option>CA</option>
+                <option>CO</option>
+                 <option>FL</option>
+                  <option>NJ</option> 
+                   <option>NY</option>
+                    <option>PA</option>
+                     <option>TX</option>
+              </select>
+             </div>
+             <div class="col-md-6">
+               <div class="input-group">
+               <input type="text" class="form-control" placeholder="Zipcode">
+                <div class="input-group-append">
+                <button type="submit" class="btn2 btn-primary"  onclick="myFunction()">Submit</button>
+                </div>
+               </div>
+              </div>
+          </div>
+            
+    </section>
+    
+    
+<div id="myDIV" style="display:none;">
+  <div class="row">
+      <div class="col-md-6 pt-5 pl-5">
+         <h2>CLEAN CONEY ISLAND ON 6/15/2020</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg/1200px-Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg" style="height:20rem;">
+      </div>
+      <div class="col-md-6 mt-5 mb-5">
+        <h2>DESCRIPTION</h2>
+        <p>Ocean trash is a serious pollution problem that affects the health of people, wildlife and local economies. Trash in the water and on the shore can kill marine animals, injure swimmers and beachgoers, and ensnare boat propellers. We need your help to solve this problem. Volunteers with Ocean Purity have picked up everything imaginable along the world’s shorelines: cigarette butts, food wrappers, abandoned fishing gear and even automobiles and kitchen appliances.</p>
+
+        <br>
+        <h2>WHAT SHOULD YOU BRING?</h2>
+        <p>You should pack a lunch and it is recommended to bring a bookbag to hold your belongings.</p>
+
+       <br>
+           <h2>PERSONAL INFO</h2>
+         <form class="mr-5">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+    <label for="exampleFormControlInput1">Phone Number</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="888-888-888">
+     <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">People Coming</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Comments & Concerns</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+        <a><button type="submit" class="btn2 btn-primary"  data-toggle="modal" data-target="#exampleModalCenter">Submit</button></a>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="color:#024469;font-size: 1.2rem; font-family: 'Lato', sans-serif;float:left;">Thank You For Joining Us At Coney Island on 6/15/20 </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+         <div class="col-lg-12">
+          <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">Please Check Your Email To Verify This Event</p>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col-lg-12">
+          <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">Name: John Doe</p>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col-lg-12">
+          <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">Phone Number: 111-111-1111</p>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col-lg-12">
+          <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">Email: email.com</p>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col-lg-12">
+          <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">People Coming: 1</p>
+        </div>
+      </div>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer style="background-color:#003755;padding-bottom:2rem;">
+  <div class="foot container">
+    <div class="row">
+      <div class="col-md-6">
+        <hr style="background-color:white;height:0.1rem;width:40%;" align="left">
+        <h3>FOLLOW US</h3>
+        <img src="img/twitter.svg" style="height:2rem;">
+        <img src="img/facebook.svg" style="height:2rem;">
+        <img src="img/vimeo.svg" style="height:2rem;">
+        <img src="img/google-plus.svg" style="height:2.8rem;">
+      </div>
+      <div class="col-md-6" style="margin-top:1.8rem;">
+        <h5>Join other informed donors and get updates on new features, news, and volunteering opportunities.</h5>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Your email address">
+          <div class="input-group-append">
+            <button type="submit" class="btn2 btn-primary" id="myBtn" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+            
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="color:#024469;font-size: 1.2rem; font-family: 'Lato', sans-serif;float:left;">Thank You For Joining Monthlies!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color:#024469;font-family: 'Lato', sans-serif;float:left">You will now be added to our mailing list. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top:5rem;">
+      <div class="col-md-3">
+        <h4>CONTACT<h4>
+              <h5 class="mt-3">Monthlies<br>
+              Po Box 1456<br>
+              Washington, D.C.<br> United States<br></h5>
+              <h5>monthelies@gmail.com<br> 
+              (523) 234-2546</h5>
+        
+      </div>
+      <div class="col-md-3">
+        <h4>HELP<h4>
+            <a href="#">
+              <h5 class="mt-3">Donate</h5>
+            </a>
+            <a href="fix.html">
+              <h5 class="mt-3">Volunteer</h5>
+            </a>
+           
+      </div>
+      <div class="col-md-3">
+        <h4> AWARENESS <h4>
+            <a href="problem.html">
+              <h5 class="mt-3">Concerns</h5>
+            </a>
+            <a href="fix.html">
+              <h5 class="mt-3">Solutions</h5>
+            </a>
+            <a href="#news">
+              <h5 class="mt-3">News</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Subscribe</h5>
+            </a>
+            <a href="#info">
+              <h5 class="mt-3">Our Mission</h5>
+            </a>
+      </div>
+      <div class="col-md-3">
+        <h4>SPONSORS<h4>
+            <a href="">
+              <h5 class="mt-3">Kao</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Johnson&Johnson</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Proctor and Gamble</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Kimberly-Clark</h5>
+            </a>
+            <a href="">
+              <h5 class="mt-3">Bella</h5>
+            </a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- donation popup content -->
+<div id="myModal2" class="modal2">
+
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+     <h3 class="h3tag3">THANK YOU, FOR YOUR DONATION</h3>
+     <hr style="margin-top:5rem;height:1rem;">
+       <h3 class="text-left">Your donation will be used to protects wild rivers, restore damaged rivers and the wildlife they support, and conserve clean water for people and nature.</h3>
+       <a href="index.html"><button type="submit" class="btn2 btn-primary" id="myBtn" style="font-size:1.5rem;">CONTINUE</button></a>
+  </div>
+
+</div>
+
+
+
+
+
+  
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
